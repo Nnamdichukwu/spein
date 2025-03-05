@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Scrapy
+scrapy.cfg
+crawler.log
+
+# Project specific
+main.py
+test_fiz.py
+*.pdf
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+
+# Database
+
+*.db
