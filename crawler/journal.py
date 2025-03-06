@@ -20,7 +20,14 @@ class JournalsSpider(scrapy.Spider):
         super(JournalsSpider, self).__init__(*args, **kwargs)
         self.logger.setLevel(logging.INFO)
         
-        # Initialize database
+       
+        if 'start_urls' in kwargs:
+            if isinstance(kwargs['start_urls'], str):
+                self.start_urls = [kwargs['start_urls']]
+            else:
+                self.start_urls = kwargs['start_urls']
+
+   
         db = conn()
         db.create_table_if_not_exists("files")
         db.close()
