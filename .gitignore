@@ -12,7 +12,7 @@ main.py
 test_fiz.py
 *.pdf
 
-# Environment
+# Environment variables
 .env
 .venv
 env/
